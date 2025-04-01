@@ -215,8 +215,9 @@ function App() {
                 id="C"
                 onClick={() => {
                   setValue(0);
-                  (document.querySelector("#from") as HTMLInputElement).value =
-                    "";
+                  (
+                    document.querySelector("#from") as HTMLDivElement
+                  ).innerHTML = "";
                 }}
               >
                 C
